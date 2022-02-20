@@ -1,96 +1,146 @@
+/*
+freeCodeCamp 'Responsive Web Design' project
+
+Task: Create a product landing page
+Tests: The project has 15 requirements (user stories)
+    Include:
+    1 - A header element with an id of 'header'.
+    2 - An <img> element with an id of 'header-img'.
+    3 - A <nav> element with a id of 'nav-bar'.
+    4 - A minimum of 3 clickable elements in nav with an id of 'nav-link'.
+    5 - Link elements that link to relevant section on page.
+    6 - An embedded video with an id of 'video'.
+    7 - A form element with an id of 'form'.
+    8 - An input element inside the form with an id of 'email'.
+    9 - Placeholder text inside the 'email' input field.
+    10 - An input field with HTML5 email validation.
+    11 - An element with id of 'submit'.
+    12 - A submit button that submits to https://www.freecodecamp.com/email-submit.
+    13 - A fixed navbar
+    14 - A minimum of one media query.
+    15 - A minimum of one implementation of flexbox.   
+
+Completion: Submit URL to working projects with all tests passing.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+        0.  Global Setup
+        1.  Header
+        2.  Main Content
+            a.  Email form
+            b.  Text content
+            c.  Video
+        3.  Footer
+----------------------------------------------------------------*/
+
+/*-------------------------------------------------------------
+    0. Global Setup
+---------------------------------------------------------------*/
+
+:root {
+    --primary-colour: #002642;
+    --secondary-colour: #F6F6F6;
+    --icon-colour: #F37C7D;
+    --button-colour: #F7B801;
+
+    --font-df: 'Mulish', sans-serif;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Mulish', sans-serif;
-
+    font-family: var(--font-df);
 }
 
 body {
     margin-top: 15vh; /* push body below fixed header */
 }
 
+
+/*-------------------------------------------------------------
+    1. Header
+---------------------------------------------------------------*/
+
 #header {
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
+    position: fixed; /*user story 13 (required)*/
     top: 0;
     left: 0;
-    width: 100%;
-    height: 10vh;
-    height: fit-content;
-    background-color: #f6f6f6;
-    border-bottom: 1px solid #002642;
+    display: flex; /* user story 15 (required) */
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+
+    border-bottom: 1px solid var(--primary-colour);
+
+    background-color: var(--secondary-colour);
 }
 
+/* user story 14 (required) */
 @media (max-width: 300px) {
     body {
         margin-top: 20vh;
     }
-
     #nav-bar {
         justify-content: center;
     }
 }
 
-#logo {
-    display: flex;
-    max-height: 100%;
-}
-
-#title {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 200;
-    color: #002642;
-}
-
 #header-img {
     align-self: center;
-    height: 65%;
     height: 6vh;
-    margin: 5px;
     max-height: 100%;
+    
+    margin: 5px;
 }
 
 #nav-bar, #nav-bot {
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     height: 65%;
-    background-color: #002642;
-    flex-wrap: wrap;
+    
+    background-color: var(--primary-colour);
+}
+
+#nav-bar {
+    padding-bottom: 5px;
 }
 
 #nav-bot .nav-link {
-    color: #f6f6f6;
+    color: var(--secondary-colour);
 }
 
 .nav-link {
-    padding: 5px 10px;
-    margin: 0 5px;
     height: 100%;
-    color: white;
+
+    margin: 0 5px;
+    padding: 5px 10px;
+    
+    color: var(--secondary-colour);
     text-transform: uppercase;
     font-weight: 200;
     text-underline-offset: 3px;
 }
 
+
+/*-------------------------------------------------------------
+    2. Main Content
+---------------------------------------------------------------*/
+
 #main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-#video {
-    width: 560px;
-    width: 95%;
-    height: 315px;
-    margin: 2.5% auto;
-    scroll-margin-top: 10vh;
-    max-width: 100%;
-}
+/*---------------------------
+    a. Email form
+-----------------------------*/
 
 #form {
     display: flex;
@@ -98,12 +148,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+
     margin-bottom: 5vh;
 }
 
 #email-label {
     width: clamp(100px, 350px, 95%);
     height: 5vh;
+
     margin: 0 auto;
     margin-bottom: 1vh;
 }
@@ -111,29 +163,36 @@ body {
 #email {
     width: 100%;
     height: 100%;
-    font-size: 1rem;
+
     padding: 1%;
+
+    font-size: 1rem;
 }
 
 #submit, .buy {
-    background-color: #002642;
-    background-color: #F7B801;
-    color: white;
-    color: #002642;
+    margin-bottom: 5px;
+    border: 1px solid var(--primary-colour);
+    padding: 5px 5px;
+
+    background-color: var(--button-colour);
+    color: var(--primary-colour);
     text-transform: uppercase;
     font-size: large;
-    border: 1px solid #002642;
-    margin-bottom: 5px;
+    
     cursor: pointer;
-    padding: 5px 5px;
 }
 
 .buy {
+    width: fit-content;
+    height: 5vh;
+
     margin-top: 2.5%;
     padding: 0 2.5%;
-    height: 5vh;
-    width: fit-content;
 }
+
+/*---------------------------
+    b. Text content
+-----------------------------*/
 
 .content {
     display: grid;
@@ -141,6 +200,7 @@ body {
     column-gap: 5vh;
     row-gap: 5vh;
     width: 100%;
+
     scroll-margin-top: 10vh;
 }
 
@@ -148,9 +208,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: fit-content;
-    box-shadow: 0 0 1.5px 1.5px #002642;
-    flex-grow: 1;
+    min-height: fit-content; /* items on same row have same height */
+
+    box-shadow: 0 0 1.5px 1.5px var(--primary-colour);
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
@@ -163,23 +223,35 @@ body {
     display: flex;
     flex-direction: column;    
     align-items: center;
-    background-color: #002642;
     width: 100%;
+
     margin-bottom: 2%;
     padding: 1%;
+
+    background-color: var(--primary-colour);
 }
 
 .item-head h2 {
-    color: white;
+    color: var(--secondary-colour);
 }
 
-#battery {
-    width: 100px;
-    color: #002642;
+
+/*---------------------------
+    c. Video 
+-----------------------------*/
+
+#video {
+    width: 95%;
+    max-width: 100%;
+    height: 315px;
+
+    margin: 2.5% auto;
+
+    scroll-margin-top: 10vh;
 }
 
 i {
-    color: #F37C7D;
+    color: var(--icon-colour);
 }
 
 .product {
@@ -190,22 +262,6 @@ i {
     padding: 0 2.5%;
 }
 
-#footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5%;
-    background-color: #002642;
-    height: fit-content;
-    color: #f6f6f6;
-}
-
-#foot-txt {
-    margin-left: 1%;
-    margin-bottom: 0.5%;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
 .specs {
     list-style: none;
     text-align: center;
@@ -214,4 +270,25 @@ i {
 
 .item p {
     padding: 2.5%;
+}
+
+
+/*-------------------------------------------------------------
+    3. Footer
+---------------------------------------------------------------*/
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    margin-top: 2.5%;
+
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
+#foot-txt {
+    margin: 0 5px;
+    padding: 5px 10px;
 }
