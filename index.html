@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9dca29f8ed.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="assets/product-logo.svg" alt="logo">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#features">Why Zeus?</a>
+                <a class="nav-link" href="#video">About</a>
+                <a class="nav-link" href="#products">Prices</a>
+            </nav>
+        </header>
+        <main id="main">
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <h2>Power on the Go</h2>
+                <label id="email-label" aria-label="enter email">
+                    <input id="email" name="email" type="email" placeholder="Enter email" aria-required="true" required>
+                </label>
+                <button id="submit">Submit</button>
+            </form>
+            <div id="features" class="content">
+                <div class="item">
+                    <div class="item-head">
+                        <i class="fa-solid fa-battery-full fa-2x"></i>
+                        <h2>Powerful</h2>
+                    </div>
+                    <p>
+                        With Zeus Power you can charge a single mobile phone up to 10 times or
+                        even charge three devices simultaneously.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <i class="fa-solid fa-feather fa-2x"></i>
+                        <h2>Light</h2>
+                    </div>
+                    <p>
+                        But all that power doesn't need to weigh you down. Our Power Banks are
+                        1kg or less.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <i class="fa-solid fa-gauge-high fa-2x"></i>
+                        <h2>Fast</h2>
+                    </div>
+                    <p>
+                        In a hurry? Switch to fast mode and power up your mobile to 50% in 30 minutes or less.
+                    </p>
+                </div>
+            </div>
+            <iframe id="video" src="https://www.youtube-nocookie.com/embed/f02PH5YkqG8?controls=0" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="products" class="content">
+                <div class="item">
+                    <div class="item-head">
+                        <h2>PowerCore</h2>
+                    </div>
+                    <h3>£30.00</h3>
+                    <img class="product" src="assets/powerbank-1.svg" >
+                    <button class="buy">Select</button>
+                    <ul class="specs">
+                        <li>30000mAh</li>
+                        <li>USB-A</li>
+                        <li>USB-C</li>
+                        <li>1kg</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <h2>PowerUp</h2>
+                    </div>
+                    <h3>£25.00</h3>
+                    <img class="product" src="assets/powerbank-2.svg">
+                    <button class="buy">Select</button>
+                    <ul class="specs">
+                        <li>20000mAh</li>
+                        <li>USB-A</li>
+                        <li>USB-C</li>
+                        <li>0.75kg</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <h2>PowerLight</h2>
+                    </div>
+                    <h3>£20.00</h3>
+                    <img class="product" src="assets/powerbank-3.svg">
+                    <button class="buy">Select</button>
+                    <ul class="specs">
+                        <li>10000mAh</li>
+                        <li>USB-A</li>
+                        <li>USB-C</li>
+                        <li>0.5kg</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="nav-bot">
+                <a class="nav-link" href="#features">Privacy</a>
+                <a class="nav-link" href="#video">Terms</a>
+                <a class="nav-link" href="#products">Contact</a>
+            </div>
+            <div>
+                <p id="foot-txt">&#169; 2022 ZEUS Power</p>
+            </div>
+            <!-- freeCodeCamp testing scripts -->
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </footer>
+    </body>
+</html>

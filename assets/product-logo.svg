@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="49.154907mm"
+   height="20.013355mm"
+   viewBox="0 0 49.154906 20.013355"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="product-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.4872615"
+     inkscape:cx="63.724703"
+     inkscape:cy="65.93597"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.09668,-196.47963)">
+    <rect
+       style="opacity:1;fill:#002642;fill-opacity:1;stroke:none;stroke-width:0.849254;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2764"
+       width="49.154907"
+       height="20.013355"
+       x="52.09668"
+       y="196.47963"
+       ry="2.122108" />
+    <path
+       id="rect1108"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.215948"
+       d="m 68.657879,197.59486 -11.87154,10.1663 3.792228,-1.01613 -5.354154,8.41996 11.87154,-10.16629 -3.792226,1.01613 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="69.324066"
+       y="208.61185"
+       id="text6235"><tspan
+         sodipodi:role="line"
+         id="tspan6233"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="69.324066"
+         y="208.61185">ZEUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="80.058167"
+       y="213.93265"
+       id="text6235-4"><tspan
+         sodipodi:role="line"
+         id="tspan6233-6"
+         style="font-size:5.64444px;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="80.058167"
+         y="213.93265">power</tspan></text>
+  </g>
+</svg>
